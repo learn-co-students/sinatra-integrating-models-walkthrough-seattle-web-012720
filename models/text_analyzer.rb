@@ -1,4 +1,5 @@
 # Your TextAnalyzer model code will go here.
+
 class TextAnalyzer
   attr_reader :text
 
@@ -26,7 +27,7 @@ class TextAnalyzer
     arr2 = {}
 
     arr1.map do |c|
-      arr2[c] = arr.count(c) #why do we do arr.count(c) ?
+      arr2[c] = arr.count(c)
     end
 
     biggest = { arr2.keys.first => arr2.values.first }
